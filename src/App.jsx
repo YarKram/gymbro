@@ -19,6 +19,8 @@ function App() {
 		});
 	}, [currentDate]);
 
+	console.log(currentDate);
+
 	const getInitialData = () => {
 		// Retrieve data from localStorage if available, or initialize with default values
 		const savedData = JSON.parse(localStorage.getItem("trainingData"));
