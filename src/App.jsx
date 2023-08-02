@@ -87,6 +87,7 @@ function App() {
 								gap: "30px",
 								marginBottom: "10px",
 								alignItems: "center",
+								flexWrap: "wrap",
 							}}
 						>
 							<a href={link}>{exercise}</a>
@@ -104,7 +105,11 @@ function App() {
 								trainingData[index].savedData.map((data, dataIndex) => (
 									<div
 										key={dataIndex}
-										style={{ display: "flex", alignItems: "center" }}
+										style={{
+											display: "flex",
+											alignItems: "center",
+											flexWrap: "wrap",
+										}}
 									>
 										<p>
 											Підходи: {data.sets}, Рази: {data.reps}, Вага:{" "}
